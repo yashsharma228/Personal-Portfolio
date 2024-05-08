@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="container">
+        <nav>
+          <h3><span>Y</span>ASH.</h3>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Frontend Developer</p>
+          <h1>Hi, I'm <span>Yash Sharma</span><br /> From Jaipur, India</h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="profile.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subTitle">About Me</h1>
+            <p>My current skills mostly in terms of programming and technology.</p><br>
+            <p>
+              I am doing MCA from Manipal University Jaipur. And I am a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall project. Check out some of my work in the Projects section.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-links" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <br />HTML | CSS <br />
+                  JavaScript | ECMAScript | REST API | Debugging<br/>
+                  Bootstrap | Responsive Design Principles<br>
+                  Data Structures and Algorithms (Beginner level)<br>
+                  Git | GitHub 
+                </li>
+                <ul>
+                  <li>Salesforce CRM (Basics)</li>
+                </ul>
+
+      
+               
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>July'2023 - Present</span><br /><b>MCA</b> from Manipal
+                  University, Jaipur
+                </li>
+                <li>
+                  <span>Aug'2018 - Oct'2021</span><br /><b>BCA</b> from Apex Institute
+                  of Management <br />
+                  and Science, Jaipur
+                </li>
+                <li>
+                  <span>2018</span><br /><b>12th</b> from Saint Joseph Academy, Jaipur
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+       <img src="work-1.png" alt="">
+       <div class="layer">
+        <h3><b>Random Quote Generator</b> </h3>
+        <p> This is a simple web application designed to display random quotes to users upon request. Built using HTML, CSS, and JavaScript. </p>
+        <a href="https://yashsharma228.github.io/Random-Quote-Generator-Website/"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+       </div>
+      </div>
+      <div class="work"> 
+        <img src="work-2.png" alt="">
+        <div class="layer">
+          <h3><b>Stone Paper Scissor Game</b></h3>
+          <p>This is a simple web application that allows users to playing the game Stone Paper Scissors against the computer. The application is built using HTML, CSS, and JavaScript.</p>
+         <a href="https://yashsharma228.github.io/Stone_Paper_Scissor_Game/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+         </div>
+       </div>
+       <div class="work">
+        <img src="work-3.png" alt="">
+        <div class="layer">
+          <h3><b>Responsive Restaurant Website</b></h3>
+          <p>I crafted a restaurant website that offers an optimal viewing experience for visitors across desktops, tablets, and mobile devices. The application is built using HTML and CSS. </p>
+          <a href="https://yashsharma228.github.io/Responsive_Restaurant_Website_Project/"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+         </div>
+       </div>
+       <div class="work">
+        <img src="work-4.png" alt="">
+        <div class="layer">
+          <h3><b>Amazon Clone Website</b></h3>
+          <p>I recreated key components and design elements of the Amazon website to provide a realistic browsing experience for users. The application is built using HTML and CSS.</p>
+          <a href="https://yashsharma228.github.io/Amazon_Clone_Website_Project/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+         </div>
+       </div>
+    </div>
+    <a href="#" class="btn">See More</a>
+  </div>
+</div>
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> yashsharma4841@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> (+91)9571790228</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/yash-sharma-612a98205/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/yashsharma228"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.salesforce.com/trailblazer/ysharma254"
+                ><i class="fa-brands fa-salesforce"></i
+              ></a>
+              <a href="https://twitter.com/Yashsharma0228"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </div>
+            <a href="YASH_SHARMA_ RESUME.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="conatct-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          copyright © 2024 . Made with <i class="fa-solid fa-heart"></i> by Yash
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+                  const scriptURL =
+                    "https://script.google.com/macros/s/AKfycbxxBM-vkgHQo-gSEYOVxozGM_4IxHrBpdylSQh9Uvv4pcaI0iV4PwWZycdxYn5VhBhG0g/exec";
+                  const form = document.forms['submit-to-google-sheet'];
+                  const msg = document.getElementById("msg")
+                  form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+                    .then(response => {
+                      msg.innerHTML = "Message sent Successfully"
+                      setTimeout(function(){
+                        msg.innerHTML = " "
+                      }, 5000) 
+                      form.reset()
+                          })
+                     .catch(error => console.eror('Error! , error.message'))
+                  });
+    </script>
+  </body>
+</html>
